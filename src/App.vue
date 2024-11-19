@@ -1,28 +1,56 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    
+    <b-navbar
+      toggleable="lg"
+      type="dark"
+      variant="success"
+      fixed="top"
+      class="navbar-blue"
+    >
+      <!-- Left-Aligned Brand Logo and Name -->
+      <b-navbar-brand
+        href="#motodeal"
+        class="d-flex align-items-center mr-auto"
+      >
+        <img
+          src="https://cdn-icons-png.flaticon.com/128/1768/1768191.png"
+          alt="Logo"
+          style="width: 50px; height: auto; margin-right: 10px"
+        />
+        <span>Motodeal</span>
+      </b-navbar-brand>
+
+      <!-- Center-Aligned Navbar Links -->
+      <b-collapse id="nav-collapse" is-nav class="justify-content-center">
+        <b-navbar-nav>
+          <b-nav-item to="/">Home</b-nav-item>
+          <b-nav-item to="/bikes">Bikes</b-nav-item>
+          <b-nav-item to="/Accessory">Accessory</b-nav-item>
+          <b-nav-item :to="{path:'/', hash:'#about'}">About</b-nav-item>
+          <b-nav-item to="/blogs">Blog</b-nav-item>
+          
+        </b-navbar-nav>
+      </b-collapse>
+
+      <!-- Right-Aligned Login/Register -->
+      <b-navbar-nav class="ml-auto">
+        <b-nav-item to="/login">Login / Register</b-nav-item>
+      </b-navbar-nav>
+    </b-navbar>
+    
+
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
+
 </style>
