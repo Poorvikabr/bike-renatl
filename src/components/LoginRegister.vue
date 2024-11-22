@@ -56,7 +56,7 @@ methods: {
     }
     if (!this.errors.emailOrNumber && !this.errors.password) {
       alert('You have successfully logged in');
-      this.$router.push('/bikes');
+      this.$router.push('/Display');
     }
   }
 }

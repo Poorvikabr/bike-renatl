@@ -25,8 +25,8 @@
       <b-collapse id="nav-collapse" is-nav class="justify-content-center">
         <b-navbar-nav>
           <b-nav-item to="/">Home</b-nav-item>
-          <b-nav-item to="/bikes">Bikes</b-nav-item>
-          <b-nav-item to="/Accessory">Accessory</b-nav-item>
+          <b-nav-item to="/Display">Bikes/Accessories</b-nav-item>
+          
           <b-nav-item :to="{path:'/', hash:'#about'}">About</b-nav-item>
           <b-nav-item to="/blogs">Blog</b-nav-item>
           
@@ -49,8 +49,3 @@ export default {
   name: 'App',
 };
 </script>
-
-<style>
-
-
-</style>

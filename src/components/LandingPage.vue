@@ -10,7 +10,7 @@
       <h5 class="text-secondary mb-4">
         Ride with Confidence – Your Trusted Platform for Easy and Affordable Bike Rentals!
       </h5>
-      <b-button variant="primary" class="my-3" href="/bikes/">
+      <b-button variant="primary" class="my-3" href="/Display">
     Rent Now
   </b-button>
       
@@ -44,7 +44,7 @@
           <!-- Embed Google Maps iframe for live location -->
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.9958890095986!2d77.63960807194454!3d12.97211451487334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae16a77f100f77%3A0xc5ec8c9958653929!2sOntrack%20%7C%20Bike%20Rentals%20in%20Bangalore%20-%20Corporate%20Office!5e0!3m2!1sen!2sin!4v1731562064085!5m2!1sen!2sin"
-            width="450"
+            width="650"
             height="450"
             style="border: 0"
             allowfullscreen=""
